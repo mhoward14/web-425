@@ -13,7 +13,7 @@ export class AppComponent {
   name:string = 'Matthew Howard';
 
   changeName() {
-    this.name = 'Matthew Howard';
+    this.name = 'Matthew R. Howard';
   }
 }
 
