@@ -15,17 +15,9 @@ import { Component, OnInit } from '@angular/core';
 `,
 styles: [`
   .login { 
-    background-color: gold;
-   margin-right: 5%;
+    margin-right: 5%;
    margin-left: 5%;
-  }
-  .form-control{
-    margin-right: 5%;
-    margin-left: 5%;
-  }
-  .btn block{
-    margin-right: 5%;
-    margin-left: 5%;
+   text-align: center
   }
 `]
 })

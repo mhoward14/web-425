@@ -7,7 +7,7 @@ export class UnsavedChangesGuard implements CanDeactivate<ProductDetailComponent
 
     canDeactivate(component: ProductDetailComponent) {
         if (component.name.dirty) {
-            return window.confirm('You sitll have unsaved changes.  Are you sure you want to leave this page?');
+            return window.confirm('You still have unsaved changes.  Are you sure you want to leave this page?');
         } else {
             return true;
         }

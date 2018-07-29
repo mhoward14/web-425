@@ -6,22 +6,28 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ReactiveFormsModule, FormsModule } from '../../node_modules/@angular/forms';
+import { UnsavedChangesGuard } from './unsaved-changes.guard';
+import { LoginGuard } from './login.guard';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+
   ],
-  providers: [],
+  providers: [
+    UnsavedChangesGuard,
+    LoginGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
