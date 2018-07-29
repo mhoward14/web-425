@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-login',
   template: `
-  <h1 class="home">Please enter your credentials here!</h1>
+  <h1 class="login">Please enter your credentials here!</h1>
   <div class="wrapper">
     <form class="form-signin">
       <h2 class="form-signin-heading">Login</h2>
@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
   </div>
 `,
 styles: [`
-  .home { background-color: gold; }
+  .login { background-color: gold; }
 `]
 })
 export class LoginComponent implements OnInit {
