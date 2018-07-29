@@ -7,9 +7,9 @@ import {LoginGuard} from './login.guard';
 import {UnsavedChangesGuard} from './unsaved-changes.guard';
 
 const routes: Routes = [
-  {path: '', component: 'HomeComponent'},
-  {path: 'login', component: 'LoginComponent'},
-  {path: 'product', component: 'ProductDetailComponent', canActivate: [LoginGuard], canDeactivate: [UnsavedChangesGuard]}
+  {path: '', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'product', component: ProductDetailComponent, canActivate: [LoginGuard], canDeactivate: [UnsavedChangesGuard]}
 ];
 
 @NgModule({

@@ -14,7 +14,19 @@ import { Component, OnInit } from '@angular/core';
   </div>
 `,
 styles: [`
-  .login { background-color: gold; }
+  .login { 
+    background-color: gold;
+   margin-right: 5%;
+   margin-left: 5%;
+  }
+  .form-control{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .btn block{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 `]
 })
 export class LoginComponent implements OnInit {
