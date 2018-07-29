@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-login',
   template: `
-    <h1 class="home">Please enter your credentials here</h1>
-    <div class="wrapper">
+  <h1 class="home">Please enter your credentials here!</h1>
+  <div class="wrapper">
     <form class="form-signin">
       <h2 class="form-signin-heading">Login</h2>
       <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
@@ -12,16 +12,10 @@ import { Component, OnInit } from '@angular/core';
       <button class="btn btn-lg btn-warning btn-block" type="submit">Login</button>
     </form>
   </div>
-  `,
-  styles: [ `
-  .home {
-    margin-top: 20px;
-  }
-  h2 {
-    color: tomato;
-  }
-`
-]
+`,
+styles: [`
+  .home { background-color: gold; }
+`]
 })
 export class LoginComponent implements OnInit {
 
