@@ -40,6 +40,7 @@ import {FormControl} from '@angular/forms';
     .txt-bold {
       font-weight: bold;
     }
+    body {background-color: darkgreen;}
   `]
 })
 export class AppComponent {
