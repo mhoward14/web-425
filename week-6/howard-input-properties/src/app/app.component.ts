@@ -1,10 +1,3 @@
-/*
-Title: Assignment 6.2
-Author: Professor Krasso
-Date: 14 August 2018
-Modified By: Matthew Howard
-*/
-
 import { Component } from '@angular/core';
 
 @Component({
