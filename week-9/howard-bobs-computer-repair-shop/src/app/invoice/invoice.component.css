@@ -25,10 +25,14 @@ div.wrapper {
     padding: 70px 70px 70px; 
     display: inline-block; 
     position: center;
-    padding-bottom: 2%;
-    padding-top: 3%;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 1%;
+}
+
+.invoice{
+    padding: 5%;
+    text-align: center;
 }
 
 .btn-login { 
@@ -37,7 +41,3 @@ div.wrapper {
 }
 
 .frm-login-actions { text-align: right; }
-
-.invoice{
-    padding: 5%;
-}

@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <mat-card>
+      <mat-card-content>
+        <h2 class="title">Products and Services</h2>
+        <mat-list>
+            <mat-list-item *ngFor="let option of options"><mat-checkbox (change)="selectedOptions()"value="{{option.value}}" [(ngModel)]="option.checked">{{option.name}}</mat-checkbox></mat-list-item>
+        </mat-list>
+        <h2 class="title">Total: {{total}}</h2>
+        <mat-card-actions class="frm-login-actions">
+            <button mat-raised-button class="btn-login">Cancel</button>
+            <button mat-raised-button class="btn-login" (click)="getWindow()" >Confirm</button>
+          </mat-card-actions>
+      </mat-card-content>
+    </mat-card>
+    </div>
+    <router-outlet></router-outlet>

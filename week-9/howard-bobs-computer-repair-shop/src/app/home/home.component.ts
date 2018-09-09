@@ -1,11 +1,11 @@
-import { Component, } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
+export class HomeComponent {
   total: number;
   varTally: string;
   options: Array<object> = [
@@ -17,7 +17,6 @@ export class AppComponent {
     {name: 'Keyboard Cleaning ($44.99)', value: '6', checked: false, price: '44.99'},
     {name: 'Disk Cleanup ($149.99)', value: '7', checked: false, price: '149.99'}
   ];
-
   selectedOptions() {
     console.log(this.getTally(this.options
               .filter(opt => opt.checked)
@@ -32,7 +31,7 @@ export class AppComponent {
   return total;
 }
   getWindow() {
-  const w = window.open('http://localhost:4200/invoice');
+  let w = window.open('http://localhost:4200/invoice');
   w.total = this.total;
   }
 }
